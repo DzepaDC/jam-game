@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -874,6 +874,8 @@ GameObject:
   - component: {fileID: 1548107408}
   - component: {fileID: 1548107410}
   - component: {fileID: 1548107411}
+  - component: {fileID: 1548107412}
+  - component: {fileID: 1548107413}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1055,12 +1057,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 1548107404}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6e09db7a2504b3da2b103e599cd70ae, type: 3}
+  m_Script: {fileID: 11500000, guid: e78aba79450f859498470747557a3652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   haveArms: 0
   canEat: 0
   actionPressed: 0
+--- !u!95 &1548107413
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548107404}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 22bc9a7a04991a24a87f742e090c53da, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1752204385
 GameObject:
   m_ObjectHideFlags: 0
