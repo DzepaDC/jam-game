@@ -1,24 +1,31 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Experimental.Rendering.LWRP;
 
-public class PlayerState : MonoBehaviour {
+namespace Player {
+    public class PlayerState : MonoBehaviour{
+        public int hungerLevel = 0;
+        public int maxHungerLevel = 100;
+    
+        public int tempLevel = 0;
+        public int maxTemp = 100;
+        public int minTemp = -100;
 
-    public int hungerLevel = 0;
-    public int maxHungerLevel = 100;
-    
-    public int tempLevel = 0;
-    public int maxTemp = 100;
-    public int minTemp = -100;
-    
-    
-    // Start is called before the first frame update
-    void Start() {
+        public Light2D eyes;
+        public Light2D playerGlow;
+
+        public bool eyesEnabled = false;
         
-    }
-
-    // Update is called once per frame
-    void Update() {
         
+        void Start () {
+            eyesEnabled = false;
+            eyes.enabled = eyesEnabled;
+            playerGlow.enabled = eyesEnabled;
+        }
+
+        public void enableEyes() {
+            eyesEnabled = true;
+            eyes.enabled = eyesEnabled;
+            playerGlow.enabled = eyesEnabled;
+        }
     }
 }
