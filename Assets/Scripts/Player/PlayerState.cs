@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Experimental.Rendering.LWRP;
 
 namespace Player {
@@ -12,21 +13,36 @@ namespace Player {
         public int maxTemp = 100;
         public int minTemp = -100;
 
-        public Light2D eyes;
+        public Light2D eyeLeft;
+        public Light2D eyeRight;
         public Light2D playerGlow;
 
-        public bool eyesEnabled = false;
+        public GameObject eyes;
+
+        public PlayerMovement pMov;
 
         void Start () {
-            eyesEnabled = false;
-            eyes.enabled = eyesEnabled;
-            playerGlow.enabled = eyesEnabled;
+            eyeLeft.enabled = false;
+            eyeRight.enabled = false;
+            playerGlow.enabled = false;
         }
 
-        public void enableEyes() {
-            eyesEnabled = true;
-            eyes.enabled = eyesEnabled;
-            playerGlow.enabled = eyesEnabled;
+        private void FixedUpdate() {
+            Vector2 direction = pMov.GetDirection();
+            if (direction != Vector2.zero) {
+                var angle = Mathf.Atan2(-direction.x, direction.y) * Mathf.Rad2Deg;
+                Quaternion desiredLegsRotation = Quaternion.AngleAxis(angle, Vector3.forward);
+                eyes.transform.rotation = Quaternion.Slerp(eyes.transform.rotation, desiredLegsRotation, .25f);    
+            }
+        }
+
+        public void enableEyes(bool isRight) {
+            playerGlow.enabled = true;
+            if (isRight) {
+                eyeRight.enabled = true;
+            } else {
+                eyeLeft.enabled = true;
+            }
         }
     }
 }
