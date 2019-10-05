@@ -30,10 +30,10 @@ namespace Player {
             haveLeftEye = false;
             haveRightEye = false;
             haveBoots = false;
-            
+
             eyeLeft.enabled = false;
             eyeRight.enabled = false;
-            playerGlow.enabled = false;
+            playerGlow.enabled = true;
         }
 
         private void FixedUpdate() {
@@ -46,7 +46,6 @@ namespace Player {
         }
 
         public void enableEyes(bool isRight) {
-            playerGlow.enabled = true;
             if (isRight) {
                 eyeRight.enabled = true;
                 haveRightEye = true;

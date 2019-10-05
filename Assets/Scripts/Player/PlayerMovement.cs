@@ -28,5 +28,9 @@ namespace Player {
         public Vector2 GetDirection() {
             return moveInput;
         }
+
+        public bool isMoving() {
+            return moveInput != Vector2.zero;
+        }
     }
 }
