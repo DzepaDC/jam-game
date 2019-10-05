@@ -47,9 +47,14 @@ namespace Player {
                 var angle = Mathf.Atan2(-direction.x, direction.y) * Mathf.Rad2Deg;
                 Quaternion desiredLegsRotation = Quaternion.AngleAxis(angle, Vector3.forward);
                 eyes.transform.rotation = Quaternion.Slerp(eyes.transform.rotation, desiredLegsRotation, .25f);
-                playerAnimator.speed = direction.x;
+
+                if (direction.x != 0) {
+                    playerAnimator.SetFloat("Speed", direction.x);
+                } else {
+                    playerAnimator.SetFloat("Speed", direction.y);
+                }
             } else {
-                playerAnimator.speed = 0f;
+                playerAnimator.SetFloat("Speed", 0f);
             }
         }
         
