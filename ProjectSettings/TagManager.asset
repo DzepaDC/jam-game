@@ -47,6 +47,9 @@ TagManager:
   - name: Wall
     uniqueID: 74878033
     locked: 0
+  - name: ObjShadows
+    uniqueID: 4030391295
+    locked: 0
   - name: Item
     uniqueID: 515273455
     locked: 0

@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.LWRP;
+using UnityEngine.Serialization;
 
 namespace Player {
     public class PlayerState : MonoBehaviour {
@@ -21,7 +22,15 @@ namespace Player {
 
         public PlayerMovement pMov;
 
+        public bool haveLeftEye;
+        public bool haveRightEye;
+        public bool haveBoots;
+
         void Start () {
+            haveLeftEye = false;
+            haveRightEye = false;
+            haveBoots = false;
+            
             eyeLeft.enabled = false;
             eyeRight.enabled = false;
             playerGlow.enabled = false;
@@ -40,8 +49,10 @@ namespace Player {
             playerGlow.enabled = true;
             if (isRight) {
                 eyeRight.enabled = true;
+                haveRightEye = true;
             } else {
                 eyeLeft.enabled = true;
+                haveLeftEye = true;
             }
         }
     }
