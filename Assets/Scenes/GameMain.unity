@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -349,11 +349,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91956c4f1a72e214c8026271f180915f, type: 3}
---- !u!4 &455086821 stripped
+--- !u!4 &342589093 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 1781764038387801620, guid: 91956c4f1a72e214c8026271f180915f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1781764038805130481}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 342589092}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &584968867
 GameObject:
@@ -383,8 +382,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1070861897}
-  - {fileID: 455086821}
-  - {fileID: 907712587}
+  - {fileID: 1781764038805130482}
+  - {fileID: 342589093}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -604,12 +603,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &907712587 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1781764038387801620, guid: 91956c4f1a72e214c8026271f180915f,
-    type: 3}
-  m_PrefabInstance: {fileID: 342589092}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &958964158
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,7 +940,8 @@ SpriteRenderer:
   m_SortingLayerID: 2079819643
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bdcfd1ffa59988b4d9cef1a047158b13, type: 3}
+  m_Sprite: {fileID: -1808389013406062700, guid: 48b75df05fcd0474db4b8b6a89214bd6,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7482,3 +7476,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91956c4f1a72e214c8026271f180915f, type: 3}
+--- !u!4 &1781764038805130482 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1781764038805130481}
+  m_PrefabAsset: {fileID: 0}
