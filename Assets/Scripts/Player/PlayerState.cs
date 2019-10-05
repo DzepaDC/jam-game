@@ -8,6 +8,10 @@ namespace Player {
         public int health = 10;
         
         public int food = 100;
+        public int starvePoints = 2;
+        public float starveTimeDelta = 5f;
+        private float starveTimer;
+        
 
         public int tempLevel = 0;
         public int maxTemp = 100;
@@ -39,6 +43,8 @@ namespace Player {
             eyeLeft.enabled = false;
             eyeRight.enabled = false;
             playerGlow.enabled = true;
+
+            starveTimer = Time.time;
         }
 
         private void FixedUpdate() {
@@ -47,14 +53,35 @@ namespace Player {
                 var angle = Mathf.Atan2(-direction.x, direction.y) * Mathf.Rad2Deg;
                 Quaternion desiredLegsRotation = Quaternion.AngleAxis(angle, Vector3.forward);
                 eyes.transform.rotation = Quaternion.Slerp(eyes.transform.rotation, desiredLegsRotation, .25f);
+                
 
                 if (direction.x != 0) {
-                    playerAnimator.SetFloat("Speed", direction.x);
+                    if (direction.x >= 0) {
+                        playerAnimator.SetFloat("SpeedRight", 1f);
+                        playerAnimator.SetFloat("SpeedLeft", 0f);
+                    } else {
+                        playerAnimator.SetFloat("SpeedRight", 0f);
+                        playerAnimator.SetFloat("SpeedLeft", 1f);
+                    }
                 } else {
-                    playerAnimator.SetFloat("Speed", direction.y);
+                    if (direction.y >= 0) {
+                        playerAnimator.SetFloat("SpeedRight", 1f);
+                        playerAnimator.SetFloat("SpeedLeft", 0f);
+                    } else {
+                        playerAnimator.SetFloat("SpeedRight", 0f);
+                        playerAnimator.SetFloat("SpeedLeft", 1f);
+                    }
                 }
             } else {
-                playerAnimator.SetFloat("Speed", 0f);
+                playerAnimator.SetFloat("SpeedRight", 0f);
+                playerAnimator.SetFloat("SpeedLeft", 0f);
+            }
+
+            float actTime = Time.time; 
+            if (actTime - starveTimer > starveTimeDelta) {
+                food = food - starvePoints;
+                starveTimer = actTime;
+                Debug.Log("---> food: "+food);
             }
         }
         
