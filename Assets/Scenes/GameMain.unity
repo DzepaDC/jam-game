@@ -1012,8 +1012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
-  hungerLevel: 0
-  maxHungerLevel: 100
+  food: 100
   tempLevel: 0
   maxTemp: 100
   minTemp: -100
@@ -1021,10 +1020,13 @@ MonoBehaviour:
   eyeRight: {fileID: 2011967176}
   playerGlow: {fileID: 111518010}
   eyes: {fileID: 2091893457}
+  arms: {fileID: 1548107412}
   pMov: {fileID: 1548107408}
   haveLeftEye: 0
   haveRightEye: 0
   haveBoots: 0
+  haveArms: 0
+  canEat: 0
 --- !u!1818360609 &1548107411
 RotationConstraint:
   m_ObjectHideFlags: 0
@@ -1044,6 +1046,21 @@ RotationConstraint:
   m_Sources:
   - sourceTransform: {fileID: 958964159}
     weight: 1
+--- !u!114 &1548107412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548107404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e09db7a2504b3da2b103e599cd70ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  haveArms: 0
+  canEat: 0
+  actionPressed: 0
 --- !u!1 &1752204385
 GameObject:
   m_ObjectHideFlags: 0

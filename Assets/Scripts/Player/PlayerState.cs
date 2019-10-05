@@ -7,9 +7,8 @@ namespace Player {
     public class PlayerState : MonoBehaviour {
         public int health = 10;
         
-        public int hungerLevel = 0;
-        public int maxHungerLevel = 100;
-    
+        public int food = 100;
+
         public int tempLevel = 0;
         public int maxTemp = 100;
         public int minTemp = -100;
@@ -19,18 +18,23 @@ namespace Player {
         public Light2D playerGlow;
 
         public GameObject eyes;
-
+        
+        public PlayerInteraction arms;
         public PlayerMovement pMov;
 
         public bool haveLeftEye;
         public bool haveRightEye;
         public bool haveBoots;
+        public bool haveArms;
+        public bool canEat;
 
         void Start () {
             haveLeftEye = false;
             haveRightEye = false;
             haveBoots = false;
 
+            arms.enabled = false;
+            
             eyeLeft.enabled = false;
             eyeRight.enabled = false;
             playerGlow.enabled = true;
@@ -44,7 +48,11 @@ namespace Player {
                 eyes.transform.rotation = Quaternion.Slerp(eyes.transform.rotation, desiredLegsRotation, .25f);    
             }
         }
-
+        
+        public void enableArms() {
+            haveArms = true;
+            arms.enabled = true;
+        }
         public void enableEyes(bool isRight) {
             if (isRight) {
                 eyeRight.enabled = true;

@@ -19,7 +19,7 @@ namespace Items {
             PlayerMovement pMov = collision.GetComponent<PlayerMovement>();
             PlayerState pState = collision.GetComponent<PlayerState>();
             if (pMov != null && pState != null) {
-                // TODO
+                pState.enableArms();
 
                 Destroy(gameObject);
             }
