@@ -2,7 +2,9 @@
 using UnityEngine.Experimental.Rendering.LWRP;
 
 namespace Player {
-    public class PlayerState : MonoBehaviour{
+    public class PlayerState : MonoBehaviour {
+        public int health = 10;
+        
         public int hungerLevel = 0;
         public int maxHungerLevel = 100;
     
@@ -14,8 +16,7 @@ namespace Player {
         public Light2D playerGlow;
 
         public bool eyesEnabled = false;
-        
-        
+
         void Start () {
             eyesEnabled = false;
             eyes.enabled = eyesEnabled;
