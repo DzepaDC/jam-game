@@ -351,7 +351,8 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 91956c4f1a72e214c8026271f180915f, type: 3}
 --- !u!4 &342589093 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1781764038387801620, guid: 91956c4f1a72e214c8026271f180915f,
+    type: 3}
   m_PrefabInstance: {fileID: 342589092}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &584968867
@@ -1024,6 +1025,7 @@ MonoBehaviour:
   eyes: {fileID: 2091893457}
   arms: {fileID: 1548107412}
   pMov: {fileID: 1548107408}
+  playerAnimator: {fileID: 1548107413}
   haveLeftEye: 0
   haveRightEye: 0
   haveBoots: 0
@@ -1057,7 +1059,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1548107404}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e78aba79450f859498470747557a3652, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e09db7a2504b3da2b103e599cd70ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   haveArms: 0
@@ -7516,6 +7518,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 91956c4f1a72e214c8026271f180915f, type: 3}
 --- !u!4 &1781764038805130482 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1781764038387801620, guid: 91956c4f1a72e214c8026271f180915f,
+    type: 3}
   m_PrefabInstance: {fileID: 1781764038805130481}
   m_PrefabAsset: {fileID: 0}

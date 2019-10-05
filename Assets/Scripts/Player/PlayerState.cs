@@ -21,6 +21,7 @@ namespace Player {
         
         public PlayerInteraction arms;
         public PlayerMovement pMov;
+        public Animator playerAnimator;
 
         public bool haveLeftEye;
         public bool haveRightEye;
@@ -45,7 +46,10 @@ namespace Player {
             if (direction != Vector2.zero) {
                 var angle = Mathf.Atan2(-direction.x, direction.y) * Mathf.Rad2Deg;
                 Quaternion desiredLegsRotation = Quaternion.AngleAxis(angle, Vector3.forward);
-                eyes.transform.rotation = Quaternion.Slerp(eyes.transform.rotation, desiredLegsRotation, .25f);    
+                eyes.transform.rotation = Quaternion.Slerp(eyes.transform.rotation, desiredLegsRotation, .25f);
+                playerAnimator.speed = direction.x;
+            } else {
+                playerAnimator.speed = 0f;
             }
         }
         
