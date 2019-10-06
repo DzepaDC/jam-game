@@ -29,7 +29,11 @@ namespace Player {
         
         public PlayerInteraction intertaction;
         public PlayerMovement pMov;
+        
         public Animator playerAnimator;
+
+        public AnimatorOverrideController[] states;
+        private int actualState = -1;
 
         public bool haveLeftEye;
         public bool haveRightEye;
@@ -86,7 +90,6 @@ namespace Player {
             if (actTime - starveTimer > starveTimeDelta) {
                 food = food - starvePoints;
                 starveTimer = actTime;
-                Debug.Log("---> food: "+food);
 
                 if (food <= 0 && isAlive) {
                     die();
@@ -111,7 +114,9 @@ namespace Player {
             haveArms = true;
             intertaction.haveArms = true;
             Debug.Log("---> armsEnabled");
+            checkAnimator();
         }
+        
         public void enableEyes(bool isRight) {
             if (isRight) {
                 eyeRight.enabled = true;
@@ -130,6 +135,8 @@ namespace Player {
                 eyeRight.enabled = false;
                 eyeBoth.enabled = true;
             }
+            
+            checkAnimator();
         }
 
         public void die() {
@@ -138,6 +145,45 @@ namespace Player {
             pMov.hardStop();
             pMov.enabled = false;
             intertaction.enabled = false;
+        }
+
+        public void checkAnimator() {
+            bool haveOneEye = (haveLeftEye && !haveRightEye) || (haveRightEye && !haveLeftEye);
+            bool haveBothEyes = haveLeftEye && haveRightEye;
+            int tmpState = actualState;
+            
+            if (haveOneEye) {
+                if (haveArms) {
+                    if (canEat && haveBoots) {
+                        tmpState = 7;
+                    } else if (canEat) {
+                        tmpState = 3;
+                    } else if (haveBoots) {
+                        tmpState = 5;
+                    } else {
+                        tmpState = 1;
+                    }
+                } else {
+                    tmpState = 0;
+                }
+            }
+
+            if (haveBothEyes) {
+                if (haveArms) {
+                    if (haveBoots && canEat) {
+                        tmpState = 8;
+                    } else if (haveBoots) {
+                        tmpState = 6;
+                    } else if (canEat) {
+                        tmpState = 4;
+                    } else {
+                        tmpState = 2;
+                    }
+                }
+            }
+
+            actualState = tmpState;
+            playerAnimator.runtimeAnimatorController = states[actualState];
         }
     }
 }

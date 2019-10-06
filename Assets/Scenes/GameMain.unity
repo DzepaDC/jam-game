@@ -145,7 +145,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111518008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.41, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1548107409}
@@ -169,15 +169,15 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000f3e18f8e518c7604ef72b61e7b87f77b
+  m_ApplyToSortingLayers: 00000000f3e18f8e518c76042d3a0c7bffe33af0ef72b61e7b87f77b
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 1
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 0.96
+  m_PointLightInnerRadius: 0.67
+  m_PointLightOuterRadius: 1.4
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -658,7 +658,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1443442438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -882,6 +882,16 @@ MonoBehaviour:
   intertaction: {fileID: 1548107412}
   pMov: {fileID: 1548107408}
   playerAnimator: {fileID: 1548107413}
+  states:
+  - {fileID: 22100000, guid: c4c916fc2b336b74389b2f6ecffc24be, type: 2}
+  - {fileID: 22100000, guid: ec2684583a4a46a4f9d924d79a91980c, type: 2}
+  - {fileID: 22100000, guid: c620f2707d79d2642b59c3b9866e49ae, type: 2}
+  - {fileID: 22100000, guid: ee427958e2cefe6438b916ba95d4a549, type: 2}
+  - {fileID: 22100000, guid: 8f7e2784dc9ff604b93fc2da324f67ef, type: 2}
+  - {fileID: 22100000, guid: eb60a6eaa8a55c447ad2e45f100716e5, type: 2}
+  - {fileID: 22100000, guid: 0de529b483135ac459e1e19c662e4cec, type: 2}
+  - {fileID: 22100000, guid: 3e66ab77a672ea04bada6fccfc371f55, type: 2}
+  - {fileID: 22100000, guid: 9b5c8af34419513449f5ce43aec2d5c6, type: 2}
   haveLeftEye: 0
   haveRightEye: 0
   haveBoots: 0

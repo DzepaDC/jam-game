@@ -24,6 +24,7 @@ namespace Items {
                 if (!pState.haveBoots) {
                     pMov.maxSpeed = pMov.maxSpeed + addSpeed;
                     pState.haveBoots = true;
+                    pState.checkAnimator();
                 }
 
                 Destroy(gameObject);
