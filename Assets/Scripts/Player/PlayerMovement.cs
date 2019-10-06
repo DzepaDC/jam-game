@@ -19,10 +19,11 @@ namespace Player {
         
         void Update () {
             moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+            moveVelocity = moveInput.normalized * maxSpeed;
         }
         
         private void FixedUpdate() {
-            rb.velocity = moveInput.normalized * maxSpeed;
+            rb.velocity = moveVelocity;
         }
 
         public Vector2 GetDirection() {
