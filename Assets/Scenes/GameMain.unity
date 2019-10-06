@@ -867,7 +867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   isAlive: 0
-  food: 100
+  food: 40
   maxFood: 100
   starvePoints: 2
   starveTimeDelta: 5

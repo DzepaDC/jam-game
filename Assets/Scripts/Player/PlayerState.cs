@@ -145,6 +145,8 @@ namespace Player {
             pMov.hardStop();
             pMov.enabled = false;
             intertaction.enabled = false;
+            
+            playerAnimator.SetInteger("Explode", 1);
         }
 
         public void checkAnimator() {
