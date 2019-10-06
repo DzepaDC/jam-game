@@ -104,9 +104,10 @@ namespace Player {
                     food = maxFood;
                 }
 
+                Debug.Log("---> food: "+food);
+                
                 return true;
             }
-
             return false;
         }
         
@@ -114,6 +115,11 @@ namespace Player {
             haveArms = true;
             intertaction.haveArms = true;
             Debug.Log("---> armsEnabled");
+            checkAnimator();
+        }
+
+        public void enableMouth() {
+            canEat = true;
             checkAnimator();
         }
         
@@ -184,8 +190,10 @@ namespace Player {
                 }
             }
 
-            actualState = tmpState;
-            playerAnimator.runtimeAnimatorController = states[actualState];
+            if (tmpState >= 0) {
+                actualState = tmpState;
+                playerAnimator.runtimeAnimatorController = states[actualState];
+            }
         }
     }
 }
