@@ -6,9 +6,11 @@ using UnityEngine.Serialization;
 
 namespace Player {
     public class PlayerState : MonoBehaviour {
-        public int health = 10;
-        
+        public int health = 100;
+
+        public bool isAlive;
         public int food = 100;
+        public int maxFood = 100;
         public int starvePoints = 2;
         public float starveTimeDelta = 5f;
         private float starveTimer;
@@ -25,7 +27,7 @@ namespace Player {
 
         public GameObject eyes;
         
-        public PlayerInteraction arms;
+        public PlayerInteraction intertaction;
         public PlayerMovement pMov;
         public Animator playerAnimator;
 
@@ -36,12 +38,12 @@ namespace Player {
         public bool canEat;
 
         void Start () {
+            isAlive = true;
+            
             haveLeftEye = false;
             haveRightEye = false;
             haveBoots = false;
 
-            arms.enabled = false;
-            
             eyeLeft.enabled = false;
             eyeRight.enabled = false;
             eyeBoth.enabled = false;
@@ -85,12 +87,30 @@ namespace Player {
                 food = food - starvePoints;
                 starveTimer = actTime;
                 Debug.Log("---> food: "+food);
+
+                if (food <= 0 && isAlive) {
+                    die();
+                }
             }
+        }
+
+        public bool feed(int ff) {
+            if (canEat && food < maxFood) {
+                food = food + ff;
+                if (food > maxFood) {
+                    food = maxFood;
+                }
+
+                return true;
+            }
+
+            return false;
         }
         
         public void enableArms() {
             haveArms = true;
-            arms.enabled = true;
+            intertaction.haveArms = true;
+            Debug.Log("---> armsEnabled");
         }
         public void enableEyes(bool isRight) {
             if (isRight) {
@@ -110,6 +130,14 @@ namespace Player {
                 eyeRight.enabled = false;
                 eyeBoth.enabled = true;
             }
+        }
+
+        public void die() {
+            isAlive = false;
+            
+            pMov.hardStop();
+            pMov.enabled = false;
+            intertaction.enabled = false;
         }
     }
 }

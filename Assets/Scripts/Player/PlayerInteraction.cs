@@ -1,4 +1,5 @@
 ﻿using System;
+using Interactive;
 using UnityEngine;
 
 namespace Player {
@@ -8,24 +9,26 @@ namespace Player {
 
         public int actionPressed = 0;
 
-        private void Start() {
+        void Start() {
             haveArms = false;
             canEat = false;
         }
 
-        private void Update() {
+        void Update() {
             if (Input.GetKeyDown(KeyCode.Space)) {
                 actionPressed = 1;
             }
         }
 
-        private void FixedUpdate() {
-            if (actionPressed > 0) {
-                Debug.Log("---> action");
-                actionPressed = 0;
+        void OnTriggerStay2D(Collider2D collision) {
+            ITrigger trigger = collision.GetComponent<ITrigger>();
+            if (trigger != null) {
+                if (haveArms) {
+                    if (Input.GetKeyDown(KeyCode.Space)) {
+                        trigger.execute();
+                    }
+                }
             }
-            
-            // TODO
         }
     }
 }

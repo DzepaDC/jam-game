@@ -5,14 +5,13 @@ namespace Player {
         
         private Rigidbody2D rb;
         private Vector2 moveVelocity;
+        private Vector2 moveInput;
 
         public float maxSpeed = 4f;
 
         public float backwardModifier = 0.7f;
         public float sideModifier = 0.85f;
 
-        private Vector2 moveInput;
-        
         void Start () {
             rb = GetComponent<Rigidbody2D>();
         }
@@ -32,6 +31,11 @@ namespace Player {
 
         public bool isMoving() {
             return moveInput != Vector2.zero;
+        }
+
+        public void hardStop() {
+            rb.velocity = Vector2.zero;
+            moveInput = Vector2.zero;
         }
     }
 }
