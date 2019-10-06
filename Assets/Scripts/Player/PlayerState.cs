@@ -104,8 +104,6 @@ namespace Player {
                     food = maxFood;
                 }
 
-                Debug.Log("---> food: "+food);
-                
                 return true;
             }
             return false;
@@ -153,6 +151,15 @@ namespace Player {
             intertaction.enabled = false;
             
             playerAnimator.SetInteger("Explode", 1);
+        }
+
+        public void win() {
+            pMov.hardStop();
+            pMov.enabled = false;
+            intertaction.enabled = false;
+            
+            playerAnimator.SetFloat("SpeedRight", 0f);
+            playerAnimator.SetFloat("SpeedLeft", 0f);
         }
 
         public void checkAnimator() {
