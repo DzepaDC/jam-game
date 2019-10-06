@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 301fdd874ec65064eb48c072642313c6
+guid: c2ea857eadf21544cae79e7c36d5f624
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2504519554677447006
-    second: phase2_right_0
+      213: -8134817585855821644
+    second: phase33_right_0
   - first:
-      213: -824045909902362064
-    second: phase2_right_1
+      213: 1669304557178404307
+    second: phase33_right_1
   - first:
-      213: 331532050252382055
-    second: phase2_right_2
+      213: -4963501500539620703
+    second: phase33_right_2
   - first:
-      213: -8014763708016654272
-    second: phase2_right_3
+      213: 674220334251520027
+    second: phase33_right_3
   - first:
-      213: -3045328052541513171
-    second: phase2_right_4
+      213: 6262150197586452048
+    second: phase33_right_4
   - first:
-      213: 1428649499681113300
-    second: phase2_right_5
+      213: 8406543821149549069
+    second: phase33_right_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: phase2_right_0
+      name: phase33_right_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e802a5959559d25439a555217b168963
-      internalID: 2504519554677447006
+      spriteID: ddec315c669d5af43a5339ecd00026f6
+      internalID: -8134817585855821644
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: phase2_right_1
+      name: phase33_right_1
       rect:
         serializedVersion: 2
         x: 32
@@ -151,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8a67b2657111a249988d331e0efce03
-      internalID: -824045909902362064
+      spriteID: f0d379a47e9afda4eba2a9b4fc5d181b
+      internalID: 1669304557178404307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: phase2_right_2
+      name: phase33_right_2
       rect:
         serializedVersion: 2
         x: 64
@@ -172,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73b24428ccfa03b46b0083bc9537e687
-      internalID: 331532050252382055
+      spriteID: 0c3c832695fe9b54e885546be95d0b37
+      internalID: -4963501500539620703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: phase2_right_3
+      name: phase33_right_3
       rect:
         serializedVersion: 2
         x: 96
@@ -193,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3272b3a5ac0feb94eb08624f45c23fd3
-      internalID: -8014763708016654272
+      spriteID: cfc7ab0ee8d3b794d9cf88b79be8f204
+      internalID: 674220334251520027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: phase2_right_4
+      name: phase33_right_4
       rect:
         serializedVersion: 2
         x: 128
@@ -214,14 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40be2a6ae86554041a71a8bc83ecc02e
-      internalID: -3045328052541513171
+      spriteID: e0ee9a086e50a594ba8be2b2cebbef4e
+      internalID: 6262150197586452048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: phase2_right_5
+      name: phase33_right_5
       rect:
         serializedVersion: 2
         x: 160
@@ -235,8 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1af1843424bdc51469826731ffdd4c5b
-      internalID: 1428649499681113300
+      spriteID: a1a852a4d791aea4096cb45370780fc2
+      internalID: 8406543821149549069
       vertices: []
       indices: 
       edges: []

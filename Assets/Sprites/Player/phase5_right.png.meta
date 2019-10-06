@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 301fdd874ec65064eb48c072642313c6
+guid: 1db138c5e4451e843abb3705ef8ef776
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2504519554677447006
-    second: phase2_right_0
+      213: -1822164401021070298
+    second: phase5_right_0
   - first:
-      213: -824045909902362064
-    second: phase2_right_1
+      213: 9043265427897754073
+    second: phase5_right_1
   - first:
-      213: 331532050252382055
-    second: phase2_right_2
+      213: -7136131306393858173
+    second: phase5_right_2
   - first:
-      213: -8014763708016654272
-    second: phase2_right_3
+      213: 3838179663347027484
+    second: phase5_right_3
   - first:
-      213: -3045328052541513171
-    second: phase2_right_4
+      213: 3450402537531612358
+    second: phase5_right_4
   - first:
-      213: 1428649499681113300
-    second: phase2_right_5
+      213: 5027808966930944814
+    second: phase5_right_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: phase2_right_0
+      name: phase5_right_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e802a5959559d25439a555217b168963
-      internalID: 2504519554677447006
+      spriteID: 2004d2e1636dbe047879b9ba5269db0b
+      internalID: -1822164401021070298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: phase2_right_1
+      name: phase5_right_1
       rect:
         serializedVersion: 2
         x: 32
@@ -151,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8a67b2657111a249988d331e0efce03
-      internalID: -824045909902362064
+      spriteID: 42ca44f13344a38458423b7f850b0117
+      internalID: 9043265427897754073
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: phase2_right_2
+      name: phase5_right_2
       rect:
         serializedVersion: 2
         x: 64
@@ -172,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73b24428ccfa03b46b0083bc9537e687
-      internalID: 331532050252382055
+      spriteID: 63efc51d1e069f549952b37e2167f108
+      internalID: -7136131306393858173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: phase2_right_3
+      name: phase5_right_3
       rect:
         serializedVersion: 2
         x: 96
@@ -193,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3272b3a5ac0feb94eb08624f45c23fd3
-      internalID: -8014763708016654272
+      spriteID: a87657e23edd9214184a4d78a58ff280
+      internalID: 3838179663347027484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: phase2_right_4
+      name: phase5_right_4
       rect:
         serializedVersion: 2
         x: 128
@@ -214,14 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40be2a6ae86554041a71a8bc83ecc02e
-      internalID: -3045328052541513171
+      spriteID: a1d68ad6d0a6ce147b83a3ff1dbcf373
+      internalID: 3450402537531612358
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: phase2_right_5
+      name: phase5_right_5
       rect:
         serializedVersion: 2
         x: 160
@@ -235,8 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1af1843424bdc51469826731ffdd4c5b
-      internalID: 1428649499681113300
+      spriteID: 98d6c743c8b7a1244983375b7dda4d9a
+      internalID: 5027808966930944814
       vertices: []
       indices: 
       edges: []

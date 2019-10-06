@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 301fdd874ec65064eb48c072642313c6
+guid: 42e40a68a2b0c7646a173ad37c9f3b35
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2504519554677447006
-    second: phase2_right_0
+      213: 2563350142403314783
+    second: phase32_right_0
   - first:
-      213: -824045909902362064
-    second: phase2_right_1
+      213: -3030396422580550884
+    second: phase32_right_1
   - first:
-      213: 331532050252382055
-    second: phase2_right_2
+      213: -6772655257577290592
+    second: phase32_right_2
   - first:
-      213: -8014763708016654272
-    second: phase2_right_3
+      213: -4331646144321784896
+    second: phase32_right_3
   - first:
-      213: -3045328052541513171
-    second: phase2_right_4
+      213: -2154103374146533792
+    second: phase32_right_4
   - first:
-      213: 1428649499681113300
-    second: phase2_right_5
+      213: 1531189189572597722
+    second: phase32_right_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: phase2_right_0
+      name: phase32_right_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e802a5959559d25439a555217b168963
-      internalID: 2504519554677447006
+      spriteID: 36d536038403eac488cc96781f0ec5a3
+      internalID: 2563350142403314783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: phase2_right_1
+      name: phase32_right_1
       rect:
         serializedVersion: 2
         x: 32
@@ -151,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8a67b2657111a249988d331e0efce03
-      internalID: -824045909902362064
+      spriteID: 389b2207a52a38b4fbd20f93ce8f44b5
+      internalID: -3030396422580550884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: phase2_right_2
+      name: phase32_right_2
       rect:
         serializedVersion: 2
         x: 64
@@ -172,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73b24428ccfa03b46b0083bc9537e687
-      internalID: 331532050252382055
+      spriteID: 42ed479ecdab8594983e4fec66e5b359
+      internalID: -6772655257577290592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: phase2_right_3
+      name: phase32_right_3
       rect:
         serializedVersion: 2
         x: 96
@@ -193,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3272b3a5ac0feb94eb08624f45c23fd3
-      internalID: -8014763708016654272
+      spriteID: ac38c978833482149a50a5fad84ab5ad
+      internalID: -4331646144321784896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: phase2_right_4
+      name: phase32_right_4
       rect:
         serializedVersion: 2
         x: 128
@@ -214,14 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40be2a6ae86554041a71a8bc83ecc02e
-      internalID: -3045328052541513171
+      spriteID: 3b744f8887600b1418dad80b7d17d161
+      internalID: -2154103374146533792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: phase2_right_5
+      name: phase32_right_5
       rect:
         serializedVersion: 2
         x: 160
@@ -235,8 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1af1843424bdc51469826731ffdd4c5b
-      internalID: 1428649499681113300
+      spriteID: 121ae06526805c742bb4fa79e9342307
+      internalID: 1531189189572597722
       vertices: []
       indices: 
       edges: []
