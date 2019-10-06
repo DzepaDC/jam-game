@@ -63,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,7 +78,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 128
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -90,7 +90,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 128
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -109,8 +121,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,7 +130,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97d19ff4f5726bf44a1d195c554ac760
+      spriteID: b4dd18471247f4a448169c1961314a26
       internalID: -1808389013406062700
       vertices: []
       indices: 
@@ -128,10 +140,10 @@ TextureImporter:
       name: phase1_right_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 32
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,7 +151,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45893cd274aba3f48a994ce3e962564e
+      spriteID: fa85718980358ca4098aa5180396f1cd
       internalID: 1400227260363108561
       vertices: []
       indices: 
@@ -149,10 +161,10 @@ TextureImporter:
       name: phase1_right_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,7 +172,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4bd78c69a84a0d4fae39f45c32c0f9d
+      spriteID: 775c398aafb73114397b35c423252483
       internalID: -313070926816847969
       vertices: []
       indices: 
@@ -170,10 +182,10 @@ TextureImporter:
       name: phase1_right_3
       rect:
         serializedVersion: 2
-        x: 48
+        x: 96
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,7 +193,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2a72220d8074534e93d6801ed2cc46e
+      spriteID: fde676ada8e8eff4c9832c0e22ecabc5
       internalID: -6839830791204145397
       vertices: []
       indices: 
@@ -191,10 +203,10 @@ TextureImporter:
       name: phase1_right_4
       rect:
         serializedVersion: 2
-        x: 64
+        x: 128
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,7 +214,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e26557023410be43a6ce11031b796e0
+      spriteID: c34eefd64af5c1f4d9a99f7dac4727a2
       internalID: 2171078480937719058
       vertices: []
       indices: 
@@ -212,10 +224,10 @@ TextureImporter:
       name: phase1_right_5
       rect:
         serializedVersion: 2
-        x: 80
+        x: 160
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,7 +235,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b97412a068a844b488ab21ea7f296b7c
+      spriteID: 7e0dae16295ea3547ab83e62324855cc
       internalID: -2136907598624557387
       vertices: []
       indices: 
