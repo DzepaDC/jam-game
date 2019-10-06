@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.LWRP;
 using UnityEngine.Serialization;
@@ -19,6 +20,7 @@ namespace Player {
 
         public Light2D eyeLeft;
         public Light2D eyeRight;
+        public Light2D eyeBoth;
         public Light2D playerGlow;
 
         public GameObject eyes;
@@ -42,6 +44,7 @@ namespace Player {
             
             eyeLeft.enabled = false;
             eyeRight.enabled = false;
+            eyeBoth.enabled = false;
             playerGlow.enabled = true;
 
             starveTimer = Time.time;
@@ -96,6 +99,16 @@ namespace Player {
             } else {
                 eyeLeft.enabled = true;
                 haveLeftEye = true;
+            }
+
+            if (eyeRight.enabled || eyeLeft.enabled) {
+//                playerAnimator.runtimeAnimatorController = plPhase2;
+            }
+
+            if (eyeRight.enabled && eyeLeft.enabled) {
+                eyeLeft.enabled = false;
+                eyeRight.enabled = false;
+                eyeBoth.enabled = true;
             }
         }
     }
