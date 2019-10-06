@@ -15,3 +15,5 @@ AnimatorOverrideController:
     m_OverrideClip: {fileID: 7400000, guid: af253a83fa862884e8171ac1f9361aae, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 9030d6304ca597f43af82b2eee75856e, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: c7de333224e5ead4da0598639c720769, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 7cd94a926e9b47a4d8236daca4f65730, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7cd94a926e9b47a4d8236daca4f65730, type: 2}
