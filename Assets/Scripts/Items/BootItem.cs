@@ -25,6 +25,7 @@ namespace Items {
                     pMov.maxSpeed = pMov.maxSpeed + addSpeed;
                     pState.haveBoots = true;
                     pState.checkAnimator();
+                    pState.msgTransmit("i have legs!");
                 }
 
                 Destroy(gameObject);

@@ -1,4 +1,5 @@
 ﻿using System;
+using Common;
 using Interactive;
 using UnityEngine;
 
@@ -6,6 +7,8 @@ namespace Player {
     public class PlayerInteraction : MonoBehaviour {
         public bool haveArms;
         public bool canEat;
+
+        public HudScript hud;
 
         public int actionPressed = 0;
 
@@ -27,6 +30,8 @@ namespace Player {
                     if (Input.GetKeyDown(KeyCode.Space)) {
                         trigger.execute();
                     }
+                } else {
+                    hud.setMessage("i have no arms!");
                 }
             }
         }
